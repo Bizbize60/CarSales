@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1009</width>
-    <height>619</height>
+    <width>1828</width>
+    <height>698</height>
    </rect>
   </property>
   <property name="font">
@@ -24,8 +24,8 @@
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
     <size>
-     <width>971</width>
-     <height>619</height>
+     <width>1069</width>
+     <height>698</height>
     </size>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -44,7 +44,7 @@
     <property name="bottomMargin">
      <number>10</number>
     </property>
-    <item alignment="Qt::AlignmentFlag::AlignLeft">
+    <item>
      <widget class="QCustomSlideMenu" name="leftMenu" native="true">
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
@@ -62,7 +62,7 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignTop">
+       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignTop">
         <widget class="QWidget" name="widget" native="true">
          <property name="minimumSize">
           <size>
@@ -88,26 +88,23 @@
           </property>
           <item>
            <widget class="QPushButton" name="menuBtn">
-            <property name="toolTip">
-             <string>Side Menu</string>
-            </property>
             <property name="text">
              <string />
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
-              <normaloff>:/material_design/icons/material_design/menu.png</normaloff>:/material_design/icons/material_design/menu.png</iconset>
+             <iconset>
+              <normaloff>:/feather/icons/feather/menu.png</normaloff>:/feather/icons/feather/menu.png</iconset>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
        </item>
-       <item alignment="Qt::AlignmentFlag::AlignTop">
+       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignTop">
         <widget class="QWidget" name="widget_3" native="true">
          <property name="minimumSize">
           <size>
-           <width>123</width>
+           <width>98</width>
            <height>136</height>
           </size>
          </property>
@@ -129,56 +126,44 @@
           </property>
           <item>
            <widget class="QPushButton" name="homeBtn">
-            <property name="toolTip">
-             <string>Go Home</string>
-            </property>
             <property name="text">
              <string>Home</string>
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
+             <iconset>
               <normaloff>:/feather/icons/feather/home.png</normaloff>:/feather/icons/feather/home.png</iconset>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="dataBtn">
-            <property name="toolTip">
-             <string>View data analysis</string>
-            </property>
             <property name="text">
-             <string>Data Analysis</string>
+             <string>Cars</string>
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
+             <iconset>
               <normaloff>:/feather/icons/feather/list.png</normaloff>:/feather/icons/feather/list.png</iconset>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="reportsBtn">
-            <property name="toolTip">
-             <string>View reports</string>
-            </property>
             <property name="text">
-             <string>Reports</string>
+             <string>Customers</string>
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
+             <iconset>
               <normaloff>:/feather/icons/feather/printer.png</normaloff>:/feather/icons/feather/printer.png</iconset>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="graphsBtn">
-            <property name="toolTip">
-             <string>View charts</string>
-            </property>
             <property name="text">
              <string>Graphs</string>
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
+             <iconset>
               <normaloff>:/feather/icons/feather/pie-chart.png</normaloff>:/feather/icons/feather/pie-chart.png</iconset>
             </property>
            </widget>
@@ -199,11 +184,11 @@
          </property>
         </spacer>
        </item>
-       <item alignment="Qt::AlignmentFlag::AlignBottom">
+       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignBottom">
         <widget class="QWidget" name="widget_2" native="true">
          <property name="minimumSize">
           <size>
-           <width>113</width>
+           <width>116</width>
            <height>105</height>
           </size>
          </property>
@@ -225,42 +210,33 @@
           </property>
           <item>
            <widget class="QPushButton" name="settingsBtn">
-            <property name="toolTip">
-             <string>Go to settings</string>
-            </property>
             <property name="text">
              <string>Settings</string>
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
+             <iconset>
               <normaloff>:/feather/icons/feather/settings.png</normaloff>:/feather/icons/feather/settings.png</iconset>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="infoBtn">
-            <property name="toolTip">
-             <string>View information</string>
-            </property>
             <property name="text">
              <string>Information</string>
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
-              <normaloff>:/feather/icons/feather/info.png</normaloff>:/feather/icons/feather/info.png</iconset>
+             <iconset>
+              <normaloff>:/material_design/icons/material_design/info.png</normaloff>:/material_design/icons/material_design/info.png</iconset>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="helpBtn">
-            <property name="toolTip">
-             <string>Get help</string>
-            </property>
             <property name="text">
              <string>Help</string>
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
+             <iconset>
               <normaloff>:/feather/icons/feather/help-circle.png</normaloff>:/feather/icons/feather/help-circle.png</iconset>
             </property>
            </widget>
@@ -304,14 +280,11 @@
           </item>
           <item>
            <widget class="QPushButton" name="closeCenterMenuBtn">
-            <property name="toolTip">
-             <string>Close menu</string>
-            </property>
             <property name="text">
              <string />
             </property>
             <property name="icon">
-             <iconset resource="../Qss/icons/_icons.qrc">
+             <iconset>
               <normaloff>:/feather/icons/feather/x-circle.png</normaloff>:/feather/icons/feather/x-circle.png</iconset>
             </property>
            </widget>
@@ -321,9 +294,6 @@
        </item>
        <item>
         <widget class="QCustomQStackedWidget" name="centerMenuPages">
-         <property name="currentIndex">
-          <number>0</number>
-         </property>
          <widget class="QWidget" name="settingsPage">
           <layout class="QVBoxLayout" name="verticalLayout_6">
            <item>
@@ -339,7 +309,7 @@
              </property>
             </spacer>
            </item>
-           <item alignment="Qt::AlignmentFlag::AlignVCenter">
+           <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
             <widget class="QWidget" name="widget_5" native="true">
              <layout class="QVBoxLayout" name="verticalLayout_7">
               <item>
@@ -394,7 +364,7 @@
          </widget>
          <widget class="QWidget" name="informationPage">
           <layout class="QVBoxLayout" name="verticalLayout_8">
-           <item alignment="Qt::AlignmentFlag::AlignVCenter">
+           <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
             <widget class="QLabel" name="label_4">
              <property name="text">
               <string>Information</string>
@@ -408,7 +378,7 @@
          </widget>
          <widget class="QWidget" name="helpPage">
           <layout class="QVBoxLayout" name="verticalLayout_9">
-           <item alignment="Qt::AlignmentFlag::AlignVCenter">
+           <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignVCenter">
             <widget class="QLabel" name="label_5">
              <property name="text">
               <string>Help</string>
@@ -435,13 +405,13 @@
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_10">
        <property name="spacing">
-        <number>0</number>
+        <number>2</number>
        </property>
        <property name="leftMargin">
         <number>0</number>
        </property>
        <property name="topMargin">
-        <number>0</number>
+        <number>5</number>
        </property>
        <property name="rightMargin">
         <number>0</number>
@@ -449,7 +419,7 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <item alignment="Qt::AlignmentFlag::AlignTop">
+       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignTop">
         <widget class="QWidget" name="header" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_7">
           <property name="spacing">
@@ -465,9 +435,9 @@
            <number>0</number>
           </property>
           <property name="bottomMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
-          <item alignment="Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignBottom">
+          <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignBottom">
            <widget class="QLabel" name="titleTxt">
             <property name="font">
              <font>
@@ -476,11 +446,11 @@
              </font>
             </property>
             <property name="text">
-             <string>24-Modern UI</string>
+             <string>CarFinder</string>
             </property>
            </widget>
           </item>
-          <item alignment="Qt::AlignmentFlag::AlignHCenter|Qt::AlignmentFlag::AlignBottom">
+          <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignBottom">
            <widget class="QFrame" name="frame_3">
             <property name="frameShape">
              <enum>QFrame::Shape::StyledPanel</enum>
@@ -498,47 +468,41 @@
              <property name="topMargin">
               <number>5</number>
              </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
              <property name="bottomMargin">
               <number>5</number>
              </property>
              <item>
               <widget class="QPushButton" name="notificationBtn">
-               <property name="toolTip">
-                <string>View notifications</string>
-               </property>
                <property name="text">
                 <string />
                </property>
                <property name="icon">
-                <iconset resource="../Qss/icons/_icons.qrc">
+                <iconset>
                  <normaloff>:/feather/icons/feather/bell.png</normaloff>:/feather/icons/feather/bell.png</iconset>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="moreBtn">
-               <property name="toolTip">
-                <string>View more</string>
-               </property>
                <property name="text">
                 <string />
                </property>
                <property name="icon">
-                <iconset resource="../Qss/icons/_icons.qrc">
+                <iconset>
                  <normaloff>:/feather/icons/feather/more-horizontal.png</normaloff>:/feather/icons/feather/more-horizontal.png</iconset>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="profileBtn">
-               <property name="toolTip">
-                <string>Go to profile</string>
-               </property>
                <property name="text">
                 <string />
                </property>
                <property name="icon">
-                <iconset resource="../Qss/icons/_icons.qrc">
+                <iconset>
                  <normaloff>:/feather/icons/feather/user.png</normaloff>:/feather/icons/feather/user.png</iconset>
                </property>
               </widget>
@@ -546,11 +510,11 @@
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignmentFlag::AlignBottom">
-           <widget class="QFrame" name="searchInpCont">
+          <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignBottom">
+           <widget class="QFrame" name="searchinpCont">
             <property name="maximumSize">
              <size>
-              <width>261</width>
+              <width>410</width>
               <height>16777215</height>
              </size>
             </property>
@@ -577,7 +541,7 @@
               <number>5</number>
              </property>
              <item>
-              <widget class="QLabel" name="label_9">
+              <widget class="QLabel" name="label_10">
                <property name="minimumSize">
                 <size>
                  <width>16</width>
@@ -594,7 +558,7 @@
                 <string />
                </property>
                <property name="pixmap">
-                <pixmap resource="../Qss/icons/_icons.qrc">:/material_design/icons/material_design/search.png</pixmap>
+                <pixmap>../35e97f94/alert-circle.png</pixmap>
                </property>
                <property name="scaledContents">
                 <bool>true</bool>
@@ -609,8 +573,21 @@
                  <height>0</height>
                 </size>
                </property>
+               <property name="text">
+                <string />
+               </property>
                <property name="placeholderText">
                 <string>Search...</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string />
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
                </property>
               </widget>
              </item>
@@ -624,7 +601,7 @@
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTop">
+          <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignTop">
            <widget class="QFrame" name="frame_4">
             <property name="frameShape">
              <enum>QFrame::Shape::StyledPanel</enum>
@@ -650,42 +627,33 @@
              </property>
              <item>
               <widget class="QPushButton" name="minimizeBtn">
-               <property name="toolTip">
-                <string>Minimize window</string>
-               </property>
                <property name="text">
                 <string />
                </property>
                <property name="icon">
-                <iconset resource="../Qss/icons/_icons.qrc">
+                <iconset>
                  <normaloff>:/feather/icons/feather/window_minimize.png</normaloff>:/feather/icons/feather/window_minimize.png</iconset>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="restoreBtn">
-               <property name="toolTip">
-                <string>Restore window</string>
-               </property>
                <property name="text">
                 <string />
                </property>
                <property name="icon">
-                <iconset resource="../Qss/icons/_icons.qrc">
+                <iconset>
                  <normaloff>:/feather/icons/feather/square.png</normaloff>:/feather/icons/feather/square.png</iconset>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="closeBtn">
-               <property name="toolTip">
-                <string>Close app</string>
-               </property>
                <property name="text">
                 <string />
                </property>
                <property name="icon">
-                <iconset resource="../Qss/icons/_icons.qrc">
+                <iconset>
                  <normaloff>:/feather/icons/feather/window_close.png</normaloff>:/feather/icons/feather/window_close.png</iconset>
                </property>
               </widget>
@@ -706,46 +674,2097 @@
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_10">
           <property name="spacing">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="leftMargin">
            <number>5</number>
           </property>
           <property name="topMargin">
-           <number>0</number>
+           <number>5</number>
           </property>
           <property name="rightMargin">
            <number>5</number>
           </property>
           <property name="bottomMargin">
-           <number>0</number>
+           <number>5</number>
           </property>
           <item>
            <widget class="QWidget" name="mainPagesCont" native="true">
-            <layout class="QVBoxLayout" name="verticalLayout_11">
-             <property name="spacing">
-              <number>5</number>
-             </property>
-             <property name="leftMargin">
-              <number>5</number>
-             </property>
-             <property name="topMargin">
-              <number>5</number>
-             </property>
-             <property name="rightMargin">
-              <number>5</number>
-             </property>
-             <property name="bottomMargin">
-              <number>5</number>
-             </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
              <item>
               <widget class="QCustomQStackedWidget" name="mainPages">
                <widget class="QWidget" name="homePage">
-                <layout class="QVBoxLayout" name="verticalLayout_12">
+                <layout class="QVBoxLayout" name="verticalLayout_11">
                  <item>
-                  <widget class="QLabel" name="label_8">
+                  <widget class="QTableWidget" name="rentTable">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="rowCount">
+                    <number>1000</number>
+                   </property>
+                   <property name="columnCount">
+                    <number>8</number>
+                   </property>
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="reportsPage">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <item>
+                  <widget class="QTableWidget" name="customerTable">
+                   <property name="rowCount">
+                    <number>1000</number>
+                   </property>
+                   <property name="columnCount">
+                    <number>6</number>
+                   </property>
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="chartsPage">
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="label_14">
                    <property name="text">
-                    <string>Home Page</string>
+                    <string>Charts Page</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -755,43 +2774,1033 @@
                 </layout>
                </widget>
                <widget class="QWidget" name="dataAnalysisPage">
-                <layout class="QVBoxLayout" name="verticalLayout_13">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_12">
                  <item>
-                  <widget class="QLabel" name="label_10">
-                   <property name="text">
-                    <string>Data Analysis Page</string>
+                  <widget class="QTableWidget" name="carsTable">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
                    </property>
-                   <property name="alignment">
-                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                   <property name="rowCount">
+                    <number>1000</number>
                    </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-               <widget class="QWidget" name="reportsPage">
-                <layout class="QHBoxLayout" name="horizontalLayout_11">
-                 <item>
-                  <widget class="QLabel" name="label_11">
-                   <property name="text">
-                    <string>Reports Page</string>
+                   <property name="columnCount">
+                    <number>6</number>
                    </property>
-                   <property name="alignment">
-                    <set>Qt::AlignmentFlag::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-               <widget class="QWidget" name="chartsPage">
-                <layout class="QVBoxLayout" name="verticalLayout_14">
-                 <item>
-                  <widget class="QLabel" name="label_12">
-                   <property name="text">
-                    <string>Charts Page</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignmentFlag::AlignCenter</set>
-                   </property>
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <row />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
+                   <column />
                   </widget>
                  </item>
                 </layout>
@@ -803,13 +3812,19 @@
           </item>
           <item>
            <widget class="QCustomSlideMenu" name="rightMenu" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
             <property name="minimumSize">
              <size>
-              <width>200</width>
-              <height>0</height>
+              <width>600</width>
+              <height>500</height>
              </size>
             </property>
-            <layout class="QVBoxLayout" name="verticalLayout_15">
+            <layout class="QVBoxLayout" name="verticalLayout_16">
              <property name="spacing">
               <number>5</number>
              </property>
@@ -827,9 +3842,9 @@
              </property>
              <item>
               <widget class="QWidget" name="widget_6" native="true">
-               <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
                 <item>
-                 <widget class="QLabel" name="label_13">
+                 <widget class="QLabel" name="label_15">
                   <property name="text">
                    <string>Right Menu</string>
                   </property>
@@ -837,14 +3852,11 @@
                 </item>
                 <item>
                  <widget class="QPushButton" name="closeRightMenuBtn">
-                  <property name="toolTip">
-                   <string>Close menu</string>
-                  </property>
                   <property name="text">
                    <string />
                   </property>
                   <property name="icon">
-                   <iconset resource="../Qss/icons/_icons.qrc">
+                   <iconset>
                     <normaloff>:/feather/icons/feather/x-circle.png</normaloff>:/feather/icons/feather/x-circle.png</iconset>
                   </property>
                  </widget>
@@ -854,45 +3866,328 @@
              </item>
              <item>
               <widget class="QCustomQStackedWidget" name="rightMenuPages">
-               <widget class="QWidget" name="notificationsPage">
-                <layout class="QVBoxLayout" name="verticalLayout_16">
-                 <item>
-                  <widget class="QLabel" name="label_14">
-                   <property name="text">
-                    <string>Notifications</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignmentFlag::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <widget class="QWidget" name="notificationPage">
+                <widget class="QWidget" name="gridLayoutWidget_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>572</width>
+                   <height>507</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_33">
+                    <property name="text">
+                     <string>ModelYear</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QPushButton" name="CarDelete">
+                    <property name="text">
+                     <string>Delete</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QPushButton" name="CarNew">
+                    <property name="text">
+                     <string>New</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLineEdit" name="CarIdTable" />
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QLineEdit" name="Model" />
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>Model</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="3">
+                   <widget class="QPushButton" name="CarUpdate">
+                    <property name="text">
+                     <string>Update</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLineEdit" name="ModelYear" />
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="label_16">
+                    <property name="text">
+                     <string>Plate</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QLineEdit" name="Kilometer" />
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_11">
+                    <property name="text">
+                     <string>CarId</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLineEdit" name="Brand" />
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_25">
+                    <property name="text">
+                     <string>Brand</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLineEdit" name="Plate">
+                    <property name="text">
+                     <string />
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLabel" name="label_27">
+                    <property name="text">
+                     <string>Kilometer</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
                </widget>
                <widget class="QWidget" name="morePage">
-                <layout class="QVBoxLayout" name="verticalLayout_17">
-                 <item>
-                  <widget class="QLabel" name="label_15">
-                   <property name="text">
-                    <string>More</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignmentFlag::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <widget class="QWidget" name="gridLayoutWidget_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>0</y>
+                   <width>572</width>
+                   <height>507</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="3" column="0">
+                   <widget class="QLineEdit" name="FirstDate" />
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="label_17">
+                    <property name="text">
+                     <string>CarId</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="3">
+                   <widget class="QLineEdit" name="EndDate" />
+                  </item>
+                  <item row="4" column="3">
+                   <widget class="QPushButton" name="RentUpdate">
+                    <property name="text">
+                     <string>Update</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLabel" name="label_34">
+                    <property name="text">
+                     <string>FirstDate</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QLabel" name="label_35">
+                    <property name="text">
+                     <string>Status</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QLineEdit" name="CarId">
+                    <property name="text">
+                     <string />
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLabel" name="label_36">
+                    <property name="text">
+                     <string>CustomerId</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QLabel" name="label_37">
+                    <property name="text">
+                     <string>EndDate</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QLabel" name="label_38">
+                    <property name="text">
+                     <string>Damaged</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLineEdit" name="CustomerId" />
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLineEdit" name="RentPrice" />
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QLineEdit" name="Status_3" />
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLabel" name="label_12">
+                    <property name="text">
+                     <string>RentId</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLabel" name="label_39">
+                    <property name="text">
+                     <string>RentPrice</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QPushButton" name="RentNew">
+                    <property name="text">
+                     <string>New</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLineEdit" name="RentId" />
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QLineEdit" name="Damaged" />
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QPushButton" name="RentDelete">
+                    <property name="text">
+                     <string>Delete</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
                </widget>
                <widget class="QWidget" name="profilePage">
-                <layout class="QVBoxLayout" name="verticalLayout_18">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_19">
                  <item>
-                  <widget class="QLabel" name="label_16">
-                   <property name="text">
-                    <string>Profile</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignmentFlag::AlignCenter</set>
-                   </property>
-                  </widget>
+                  <layout class="QGridLayout" name="gridLayout">
+                   <item row="1" column="1">
+                    <widget class="QLabel" name="label_18">
+                     <property name="text">
+                      <string>Surname</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QLineEdit" name="Surname" />
+                   </item>
+                   <item row="0" column="0">
+                    <widget class="QLineEdit" name="CustomerId_2" />
+                   </item>
+                   <item row="2" column="1">
+                    <widget class="QLabel" name="label_20">
+                     <property name="text">
+                      <string>DriverLicense</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="2">
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>Name</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="0" column="3">
+                    <widget class="QLineEdit" name="CustomerName" />
+                   </item>
+                   <item row="3" column="3">
+                    <widget class="QPushButton" name="CustomerUpdate">
+                     <property name="text">
+                      <string>Update</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="3">
+                    <widget class="QLineEdit" name="Age" />
+                   </item>
+                   <item row="0" column="1">
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>CustomerId</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="3" column="0">
+                    <widget class="QPushButton" name="CustomerNew">
+                     <property name="text">
+                      <string>New</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="3">
+                    <widget class="QLineEdit" name="TC" />
+                   </item>
+                   <item row="1" column="2">
+                    <widget class="QLabel" name="label_19">
+                     <property name="text">
+                      <string>Age</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="2" column="0">
+                    <widget class="QLineEdit" name="License" />
+                   </item>
+                   <item row="2" column="2">
+                    <widget class="QLabel" name="label_21">
+                     <property name="text">
+                      <string>TC</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="4" column="0">
+                    <widget class="QPushButton" name="CustomerDelete">
+                     <property name="text">
+                      <string>Delete</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
                  </item>
                 </layout>
                </widget>
@@ -904,7 +4199,7 @@
          </layout>
         </widget>
        </item>
-       <item alignment="Qt::AlignmentFlag::AlignBottom">
+       <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignBottom">
         <widget class="QWidget" name="footer" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <property name="spacing">
@@ -922,14 +4217,14 @@
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <item alignment="Qt::AlignmentFlag::AlignLeft">
+          <item>
            <widget class="QLabel" name="label_6">
             <property name="text">
-             <string>Copyright Spinn Tv</string>
+             <string>Copyright Tunahan</string>
             </property>
            </widget>
           </item>
-          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+          <item>
            <widget class="QFrame" name="frame_2">
             <property name="frameShape">
              <enum>QFrame::Shape::StyledPanel</enum>
@@ -947,6 +4242,12 @@
              </item>
              <item>
               <widget class="QProgressBar" name="activityProgress">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>10</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
@@ -964,7 +4265,7 @@
             </layout>
            </widget>
           </item>
-          <item alignment="Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignBottom">
+          <item alignment="Qt::AlignmentFlag::Qt::AlignmentFlag::AlignBottom">
            <widget class="QFrame" name="sizeGrip">
             <property name="minimumSize">
              <size>

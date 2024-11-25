@@ -15,9 +15,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QHBoxLayout,
-    QLabel, QLineEdit, QMainWindow, QProgressBar,
-    QPushButton, QSizePolicy, QSpacerItem, QVBoxLayout,
+from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
+    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
+    QMainWindow, QProgressBar, QPushButton, QSizePolicy,
+    QSpacerItem, QTableWidget, QTableWidgetItem, QVBoxLayout,
     QWidget)
 
 from Custom_Widgets.QCustomQStackedWidget import QCustomQStackedWidget
@@ -26,7 +27,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1069, 698)
+        MainWindow.resize(1828, 698)
         font = QFont()
         font.setPointSize(10)
         MainWindow.setFont(font)
@@ -396,30 +397,56 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setContentsMargins(5, 5, 5, 5)
         self.mainPagesCont = QWidget(self.mainContents)
         self.mainPagesCont.setObjectName(u"mainPagesCont")
-        self.verticalLayout_11 = QVBoxLayout(self.mainPagesCont)
-        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.mainPagesCont.sizePolicy().hasHeightForWidth())
+        self.mainPagesCont.setSizePolicy(sizePolicy2)
+        self.mainPagesCont.setMaximumSize(QSize(16777215, 16777215))
+        self.horizontalLayout_12 = QHBoxLayout(self.mainPagesCont)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
         self.mainPages = QCustomQStackedWidget(self.mainPagesCont)
         self.mainPages.setObjectName(u"mainPages")
         self.homePage = QWidget()
         self.homePage.setObjectName(u"homePage")
-        self.verticalLayout_13 = QVBoxLayout(self.homePage)
-        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.label_12 = QLabel(self.homePage)
-        self.label_12.setObjectName(u"label_12")
-        self.label_12.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.verticalLayout_11 = QVBoxLayout(self.homePage)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.rentTable = QTableWidget(self.homePage)
+        if (self.rentTable.columnCount() < 8):
+            self.rentTable.setColumnCount(8)
+        if (self.rentTable.rowCount() < 1000):
+            self.rentTable.setRowCount(1000)
+        self.rentTable.setObjectName(u"rentTable")
+        sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+        sizePolicy3.setHorizontalStretch(0)
+        sizePolicy3.setVerticalStretch(0)
+        sizePolicy3.setHeightForWidth(self.rentTable.sizePolicy().hasHeightForWidth())
+        self.rentTable.setSizePolicy(sizePolicy3)
+        self.rentTable.setRowCount(1000)
+        self.rentTable.setColumnCount(8)
 
-        self.verticalLayout_13.addWidget(self.label_12)
+        self.verticalLayout_11.addWidget(self.rentTable)
 
         self.mainPages.addWidget(self.homePage)
         self.reportsPage = QWidget()
         self.reportsPage.setObjectName(u"reportsPage")
+        sizePolicy4 = QSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Preferred)
+        sizePolicy4.setHorizontalStretch(0)
+        sizePolicy4.setVerticalStretch(0)
+        sizePolicy4.setHeightForWidth(self.reportsPage.sizePolicy().hasHeightForWidth())
+        self.reportsPage.setSizePolicy(sizePolicy4)
         self.verticalLayout_14 = QVBoxLayout(self.reportsPage)
         self.verticalLayout_14.setObjectName(u"verticalLayout_14")
-        self.label_13 = QLabel(self.reportsPage)
-        self.label_13.setObjectName(u"label_13")
-        self.label_13.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.customerTable = QTableWidget(self.reportsPage)
+        if (self.customerTable.columnCount() < 6):
+            self.customerTable.setColumnCount(6)
+        if (self.customerTable.rowCount() < 1000):
+            self.customerTable.setRowCount(1000)
+        self.customerTable.setObjectName(u"customerTable")
+        self.customerTable.setRowCount(1000)
+        self.customerTable.setColumnCount(6)
 
-        self.verticalLayout_14.addWidget(self.label_13)
+        self.verticalLayout_14.addWidget(self.customerTable)
 
         self.mainPages.addWidget(self.reportsPage)
         self.chartsPage = QWidget()
@@ -435,24 +462,41 @@ class Ui_MainWindow(object):
         self.mainPages.addWidget(self.chartsPage)
         self.dataAnalysisPage = QWidget()
         self.dataAnalysisPage.setObjectName(u"dataAnalysisPage")
+        sizePolicy5 = QSizePolicy(QSizePolicy.Policy.Maximum, QSizePolicy.Policy.Preferred)
+        sizePolicy5.setHorizontalStretch(0)
+        sizePolicy5.setVerticalStretch(0)
+        sizePolicy5.setHeightForWidth(self.dataAnalysisPage.sizePolicy().hasHeightForWidth())
+        self.dataAnalysisPage.setSizePolicy(sizePolicy5)
         self.verticalLayout_12 = QVBoxLayout(self.dataAnalysisPage)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
-        self.label_11 = QLabel(self.dataAnalysisPage)
-        self.label_11.setObjectName(u"label_11")
-        self.label_11.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.carsTable = QTableWidget(self.dataAnalysisPage)
+        if (self.carsTable.columnCount() < 6):
+            self.carsTable.setColumnCount(6)
+        if (self.carsTable.rowCount() < 1000):
+            self.carsTable.setRowCount(1000)
+        self.carsTable.setObjectName(u"carsTable")
+        sizePolicy3.setHeightForWidth(self.carsTable.sizePolicy().hasHeightForWidth())
+        self.carsTable.setSizePolicy(sizePolicy3)
+        self.carsTable.setRowCount(1000)
+        self.carsTable.setColumnCount(6)
 
-        self.verticalLayout_12.addWidget(self.label_11)
+        self.verticalLayout_12.addWidget(self.carsTable)
 
         self.mainPages.addWidget(self.dataAnalysisPage)
 
-        self.verticalLayout_11.addWidget(self.mainPages)
+        self.horizontalLayout_12.addWidget(self.mainPages)
 
 
         self.horizontalLayout_10.addWidget(self.mainPagesCont)
 
         self.rightMenu = QCustomSlideMenu(self.mainContents)
         self.rightMenu.setObjectName(u"rightMenu")
-        self.rightMenu.setMinimumSize(QSize(200, 0))
+        sizePolicy6 = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy6.setHorizontalStretch(0)
+        sizePolicy6.setVerticalStretch(0)
+        sizePolicy6.setHeightForWidth(self.rightMenu.sizePolicy().hasHeightForWidth())
+        self.rightMenu.setSizePolicy(sizePolicy6)
+        self.rightMenu.setMinimumSize(QSize(600, 500))
         self.verticalLayout_16 = QVBoxLayout(self.rightMenu)
         self.verticalLayout_16.setSpacing(5)
         self.verticalLayout_16.setObjectName(u"verticalLayout_16")
@@ -477,37 +521,283 @@ class Ui_MainWindow(object):
 
         self.rightMenuPages = QCustomQStackedWidget(self.rightMenu)
         self.rightMenuPages.setObjectName(u"rightMenuPages")
+        sizePolicy2.setHeightForWidth(self.rightMenuPages.sizePolicy().hasHeightForWidth())
+        self.rightMenuPages.setSizePolicy(sizePolicy2)
         self.notificationPage = QWidget()
         self.notificationPage.setObjectName(u"notificationPage")
-        self.verticalLayout_17 = QVBoxLayout(self.notificationPage)
-        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
-        self.label_16 = QLabel(self.notificationPage)
-        self.label_16.setObjectName(u"label_16")
-        self.label_16.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.gridLayoutWidget_2 = QWidget(self.notificationPage)
+        self.gridLayoutWidget_2.setObjectName(u"gridLayoutWidget_2")
+        self.gridLayoutWidget_2.setGeometry(QRect(0, 0, 572, 507))
+        self.gridLayout_2 = QGridLayout(self.gridLayoutWidget_2)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.label_33 = QLabel(self.gridLayoutWidget_2)
+        self.label_33.setObjectName(u"label_33")
 
-        self.verticalLayout_17.addWidget(self.label_16)
+        self.gridLayout_2.addWidget(self.label_33, 2, 1, 1, 1)
+
+        self.CarDelete = QPushButton(self.gridLayoutWidget_2)
+        self.CarDelete.setObjectName(u"CarDelete")
+
+        self.gridLayout_2.addWidget(self.CarDelete, 4, 0, 1, 1)
+
+        self.CarNew = QPushButton(self.gridLayoutWidget_2)
+        self.CarNew.setObjectName(u"CarNew")
+
+        self.gridLayout_2.addWidget(self.CarNew, 3, 0, 1, 1)
+
+        self.CarIdTable = QLineEdit(self.gridLayoutWidget_2)
+        self.CarIdTable.setObjectName(u"CarIdTable")
+
+        self.gridLayout_2.addWidget(self.CarIdTable, 0, 0, 1, 1)
+
+        self.Model = QLineEdit(self.gridLayoutWidget_2)
+        self.Model.setObjectName(u"Model")
+
+        self.gridLayout_2.addWidget(self.Model, 1, 3, 1, 1)
+
+        self.label_24 = QLabel(self.gridLayoutWidget_2)
+        self.label_24.setObjectName(u"label_24")
+
+        self.gridLayout_2.addWidget(self.label_24, 1, 2, 1, 1)
+
+        self.CarUpdate = QPushButton(self.gridLayoutWidget_2)
+        self.CarUpdate.setObjectName(u"CarUpdate")
+
+        self.gridLayout_2.addWidget(self.CarUpdate, 3, 3, 1, 1)
+
+        self.ModelYear = QLineEdit(self.gridLayoutWidget_2)
+        self.ModelYear.setObjectName(u"ModelYear")
+
+        self.gridLayout_2.addWidget(self.ModelYear, 2, 0, 1, 1)
+
+        self.label_16 = QLabel(self.gridLayoutWidget_2)
+        self.label_16.setObjectName(u"label_16")
+
+        self.gridLayout_2.addWidget(self.label_16, 0, 2, 1, 1)
+
+        self.Kilometer = QLineEdit(self.gridLayoutWidget_2)
+        self.Kilometer.setObjectName(u"Kilometer")
+
+        self.gridLayout_2.addWidget(self.Kilometer, 2, 3, 1, 1)
+
+        self.label_11 = QLabel(self.gridLayoutWidget_2)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_2.addWidget(self.label_11, 0, 1, 1, 1)
+
+        self.Brand = QLineEdit(self.gridLayoutWidget_2)
+        self.Brand.setObjectName(u"Brand")
+
+        self.gridLayout_2.addWidget(self.Brand, 1, 0, 1, 1)
+
+        self.label_25 = QLabel(self.gridLayoutWidget_2)
+        self.label_25.setObjectName(u"label_25")
+
+        self.gridLayout_2.addWidget(self.label_25, 1, 1, 1, 1)
+
+        self.Plate = QLineEdit(self.gridLayoutWidget_2)
+        self.Plate.setObjectName(u"Plate")
+
+        self.gridLayout_2.addWidget(self.Plate, 0, 3, 1, 1)
+
+        self.label_27 = QLabel(self.gridLayoutWidget_2)
+        self.label_27.setObjectName(u"label_27")
+
+        self.gridLayout_2.addWidget(self.label_27, 2, 2, 1, 1)
 
         self.rightMenuPages.addWidget(self.notificationPage)
         self.morePage = QWidget()
         self.morePage.setObjectName(u"morePage")
-        self.verticalLayout_18 = QVBoxLayout(self.morePage)
-        self.verticalLayout_18.setObjectName(u"verticalLayout_18")
-        self.label_17 = QLabel(self.morePage)
-        self.label_17.setObjectName(u"label_17")
-        self.label_17.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        sizePolicy2.setHeightForWidth(self.morePage.sizePolicy().hasHeightForWidth())
+        self.morePage.setSizePolicy(sizePolicy2)
+        self.gridLayoutWidget_3 = QWidget(self.morePage)
+        self.gridLayoutWidget_3.setObjectName(u"gridLayoutWidget_3")
+        self.gridLayoutWidget_3.setGeometry(QRect(10, 0, 572, 507))
+        self.gridLayout_4 = QGridLayout(self.gridLayoutWidget_3)
+        self.gridLayout_4.setObjectName(u"gridLayout_4")
+        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.FirstDate = QLineEdit(self.gridLayoutWidget_3)
+        self.FirstDate.setObjectName(u"FirstDate")
 
-        self.verticalLayout_18.addWidget(self.label_17)
+        self.gridLayout_4.addWidget(self.FirstDate, 3, 0, 1, 1)
+
+        self.label_17 = QLabel(self.gridLayoutWidget_3)
+        self.label_17.setObjectName(u"label_17")
+
+        self.gridLayout_4.addWidget(self.label_17, 0, 2, 1, 1)
+
+        self.EndDate = QLineEdit(self.gridLayoutWidget_3)
+        self.EndDate.setObjectName(u"EndDate")
+
+        self.gridLayout_4.addWidget(self.EndDate, 3, 3, 1, 1)
+
+        self.RentUpdate = QPushButton(self.gridLayoutWidget_3)
+        self.RentUpdate.setObjectName(u"RentUpdate")
+
+        self.gridLayout_4.addWidget(self.RentUpdate, 4, 3, 1, 1)
+
+        self.label_34 = QLabel(self.gridLayoutWidget_3)
+        self.label_34.setObjectName(u"label_34")
+
+        self.gridLayout_4.addWidget(self.label_34, 3, 1, 1, 1)
+
+        self.label_35 = QLabel(self.gridLayoutWidget_3)
+        self.label_35.setObjectName(u"label_35")
+
+        self.gridLayout_4.addWidget(self.label_35, 1, 2, 1, 1)
+
+        self.CarId = QLineEdit(self.gridLayoutWidget_3)
+        self.CarId.setObjectName(u"CarId")
+
+        self.gridLayout_4.addWidget(self.CarId, 0, 3, 1, 1)
+
+        self.label_36 = QLabel(self.gridLayoutWidget_3)
+        self.label_36.setObjectName(u"label_36")
+
+        self.gridLayout_4.addWidget(self.label_36, 1, 1, 1, 1)
+
+        self.label_37 = QLabel(self.gridLayoutWidget_3)
+        self.label_37.setObjectName(u"label_37")
+
+        self.gridLayout_4.addWidget(self.label_37, 3, 2, 1, 1)
+
+        self.label_38 = QLabel(self.gridLayoutWidget_3)
+        self.label_38.setObjectName(u"label_38")
+
+        self.gridLayout_4.addWidget(self.label_38, 2, 2, 1, 1)
+
+        self.CustomerId = QLineEdit(self.gridLayoutWidget_3)
+        self.CustomerId.setObjectName(u"CustomerId")
+
+        self.gridLayout_4.addWidget(self.CustomerId, 1, 0, 1, 1)
+
+        self.RentPrice = QLineEdit(self.gridLayoutWidget_3)
+        self.RentPrice.setObjectName(u"RentPrice")
+
+        self.gridLayout_4.addWidget(self.RentPrice, 2, 0, 1, 1)
+
+        self.Status_3 = QLineEdit(self.gridLayoutWidget_3)
+        self.Status_3.setObjectName(u"Status_3")
+
+        self.gridLayout_4.addWidget(self.Status_3, 1, 3, 1, 1)
+
+        self.label_12 = QLabel(self.gridLayoutWidget_3)
+        self.label_12.setObjectName(u"label_12")
+
+        self.gridLayout_4.addWidget(self.label_12, 0, 1, 1, 1)
+
+        self.label_39 = QLabel(self.gridLayoutWidget_3)
+        self.label_39.setObjectName(u"label_39")
+
+        self.gridLayout_4.addWidget(self.label_39, 2, 1, 1, 1)
+
+        self.RentNew = QPushButton(self.gridLayoutWidget_3)
+        self.RentNew.setObjectName(u"RentNew")
+
+        self.gridLayout_4.addWidget(self.RentNew, 4, 0, 1, 1)
+
+        self.RentId = QLineEdit(self.gridLayoutWidget_3)
+        self.RentId.setObjectName(u"RentId")
+
+        self.gridLayout_4.addWidget(self.RentId, 0, 0, 1, 1)
+
+        self.Damaged = QLineEdit(self.gridLayoutWidget_3)
+        self.Damaged.setObjectName(u"Damaged")
+
+        self.gridLayout_4.addWidget(self.Damaged, 2, 3, 1, 1)
+
+        self.RentDelete = QPushButton(self.gridLayoutWidget_3)
+        self.RentDelete.setObjectName(u"RentDelete")
+
+        self.gridLayout_4.addWidget(self.RentDelete, 5, 0, 1, 1)
 
         self.rightMenuPages.addWidget(self.morePage)
         self.profilePage = QWidget()
         self.profilePage.setObjectName(u"profilePage")
+        sizePolicy2.setHeightForWidth(self.profilePage.sizePolicy().hasHeightForWidth())
+        self.profilePage.setSizePolicy(sizePolicy2)
         self.verticalLayout_19 = QVBoxLayout(self.profilePage)
         self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.gridLayout = QGridLayout()
+        self.gridLayout.setObjectName(u"gridLayout")
         self.label_18 = QLabel(self.profilePage)
         self.label_18.setObjectName(u"label_18")
-        self.label_18.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.verticalLayout_19.addWidget(self.label_18)
+        self.gridLayout.addWidget(self.label_18, 1, 1, 1, 1)
+
+        self.Surname = QLineEdit(self.profilePage)
+        self.Surname.setObjectName(u"Surname")
+
+        self.gridLayout.addWidget(self.Surname, 1, 0, 1, 1)
+
+        self.CustomerId_2 = QLineEdit(self.profilePage)
+        self.CustomerId_2.setObjectName(u"CustomerId_2")
+
+        self.gridLayout.addWidget(self.CustomerId_2, 0, 0, 1, 1)
+
+        self.label_20 = QLabel(self.profilePage)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout.addWidget(self.label_20, 2, 1, 1, 1)
+
+        self.label_13 = QLabel(self.profilePage)
+        self.label_13.setObjectName(u"label_13")
+
+        self.gridLayout.addWidget(self.label_13, 0, 2, 1, 1)
+
+        self.CustomerName = QLineEdit(self.profilePage)
+        self.CustomerName.setObjectName(u"CustomerName")
+
+        self.gridLayout.addWidget(self.CustomerName, 0, 3, 1, 1)
+
+        self.CustomerUpdate = QPushButton(self.profilePage)
+        self.CustomerUpdate.setObjectName(u"CustomerUpdate")
+
+        self.gridLayout.addWidget(self.CustomerUpdate, 3, 3, 1, 1)
+
+        self.Age = QLineEdit(self.profilePage)
+        self.Age.setObjectName(u"Age")
+
+        self.gridLayout.addWidget(self.Age, 1, 3, 1, 1)
+
+        self.label_8 = QLabel(self.profilePage)
+        self.label_8.setObjectName(u"label_8")
+
+        self.gridLayout.addWidget(self.label_8, 0, 1, 1, 1)
+
+        self.CustomerNew = QPushButton(self.profilePage)
+        self.CustomerNew.setObjectName(u"CustomerNew")
+
+        self.gridLayout.addWidget(self.CustomerNew, 3, 0, 1, 1)
+
+        self.TC = QLineEdit(self.profilePage)
+        self.TC.setObjectName(u"TC")
+
+        self.gridLayout.addWidget(self.TC, 2, 3, 1, 1)
+
+        self.label_19 = QLabel(self.profilePage)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout.addWidget(self.label_19, 1, 2, 1, 1)
+
+        self.License = QLineEdit(self.profilePage)
+        self.License.setObjectName(u"License")
+
+        self.gridLayout.addWidget(self.License, 2, 0, 1, 1)
+
+        self.label_21 = QLabel(self.profilePage)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout.addWidget(self.label_21, 2, 2, 1, 1)
+
+        self.CustomerDelete = QPushButton(self.profilePage)
+        self.CustomerDelete.setObjectName(u"CustomerDelete")
+
+        self.gridLayout.addWidget(self.CustomerDelete, 4, 0, 1, 1)
+
+
+        self.verticalLayout_19.addLayout(self.gridLayout)
 
         self.rightMenuPages.addWidget(self.profilePage)
 
@@ -565,6 +855,31 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_10.addWidget(self.footer, 0, Qt.AlignmentFlag.AlignBottom)
 
+         # QTableWidget'ı yatayda ve dikeyde esnek hale getirin
+        self.customerTable.setSizeAdjustPolicy(QTableWidget.AdjustToContents)
+ 
+        # Sütun genişliklerini otomatik olarak ayarlayın
+        self.customerTable.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+ 
+        # Satır yüksekliklerini otomatik olarak ayarlayın
+        self.customerTable.verticalHeader().setSectionResizeMode(QHeaderView.Stretch)
+ 
+        self.rentTable.setSizeAdjustPolicy(QTableWidget.AdjustToContents)
+ 
+ 
+        self.rentTable.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+ 
+        
+        self.rentTable.verticalHeader().setSectionResizeMode(QHeaderView.Stretch)
+ 
+        self.carsTable.setSizeAdjustPolicy(QTableWidget.AdjustToContents)
+ 
+        # Sütun genişliklerini otomatik olarak ayarlayın
+        self.carsTable.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+ 
+        # Satır yüksekliklerini otomatik olarak ayarlayın
+        self.carsTable.verticalHeader().setSectionResizeMode(QHeaderView.Stretch)
+ 
 
         self.horizontalLayout.addWidget(self.mainBody)
 
@@ -579,8 +894,8 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.menuBtn.setText("")
         self.homeBtn.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.dataBtn.setText(QCoreApplication.translate("MainWindow", u"Data", None))
-        self.reportsBtn.setText(QCoreApplication.translate("MainWindow", u"Reports", None))
+        self.dataBtn.setText(QCoreApplication.translate("MainWindow", u"Cars", None))
+        self.reportsBtn.setText(QCoreApplication.translate("MainWindow", u"Customers", None))
         self.graphsBtn.setText(QCoreApplication.translate("MainWindow", u"Graphs", None))
         self.settingsBtn.setText(QCoreApplication.translate("MainWindow", u"Settings", None))
         self.infoBtn.setText(QCoreApplication.translate("MainWindow", u"Information", None))
@@ -603,15 +918,40 @@ class Ui_MainWindow(object):
         self.minimizeBtn.setText("")
         self.restoreBtn.setText("")
         self.closeBtn.setText("")
-        self.label_12.setText(QCoreApplication.translate("MainWindow", u"Main Page", None))
-        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Reports Page", None))
         self.label_14.setText(QCoreApplication.translate("MainWindow", u"Charts Page", None))
-        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Data Anaysis Page", None))
         self.label_15.setText(QCoreApplication.translate("MainWindow", u"Right Menu", None))
         self.closeRightMenuBtn.setText("")
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Notifications", None))
-        self.label_17.setText(QCoreApplication.translate("MainWindow", u"More", None))
-        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Profile", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"ModelYear", None))
+        self.CarDelete.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
+        self.CarNew.setText(QCoreApplication.translate("MainWindow", u"New", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Model", None))
+        self.CarUpdate.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Plate", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"CarId", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Brand", None))
+        self.Plate.setText("")
+        self.label_27.setText(QCoreApplication.translate("MainWindow", u"Kilometer", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"CarId", None))
+        self.RentUpdate.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"FirstDate", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"Status", None))
+        self.CarId.setText("")
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"CustomerId", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"EndDate", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"Damaged", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"RentId", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"RentPrice", None))
+        self.RentNew.setText(QCoreApplication.translate("MainWindow", u"New", None))
+        self.RentDelete.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Surname", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"DriverLicense", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Name", None))
+        self.CustomerUpdate.setText(QCoreApplication.translate("MainWindow", u"Update", None))
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"CustomerId", None))
+        self.CustomerNew.setText(QCoreApplication.translate("MainWindow", u"New", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"Age", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"TC", None))
+        self.CustomerDelete.setText(QCoreApplication.translate("MainWindow", u"Delete", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Copyright Tunahan", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Theme Progress", None))
     # retranslateUi

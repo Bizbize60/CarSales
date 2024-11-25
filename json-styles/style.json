@@ -7,7 +7,7 @@
     {
       "tittle": "24-Modern GUI",
       "icon": ":/font_awesome_brands/icons/font_awesome/brands/brave-reverse.png",
-      "frameless": true,
+      "frameless": false,
       "transluscentBg": true,
       "sizeGrip": "sizeGrip",
       "navigation": [
@@ -186,7 +186,7 @@
       ],
       "expandedSize": [
         {
-        "width": 200,
+        "width": 650,
         "height": "parent"
         }
       ],
