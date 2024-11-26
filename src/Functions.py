@@ -1,3 +1,4 @@
+import mysql.connector
 from Custom_Widgets import *
 from Custom_Widgets.QAppSettings import QAppSettings
 from Custom_Widgets.QCustomTipOverlay import QCustomTipOverlay
@@ -11,7 +12,32 @@ class GuiFunctions():
         self.main=MainWindow
         self.ui =MainWindow.ui
 
+        ##############################################################
+        #VERİTABANI İÇİN BAĞLANTI KODU BUNU DEĞİŞTİRMENİZ LAZIM
 
+        
+        ##############################################################
+        #VERİTABANI İÇİN BAĞLANTI KODU BUNU DEĞİŞTİRMENİZ LAZIM
+
+        
+
+        self.mydb = mysql.connector.connect(
+        host="localhost", #BATUNUN İP ADRESİ
+        user="yourusername", #BURAK SANA BİR ÜYELİK OLUŞTURAMSI LAZIM BATU BANA OLUŞTURDUĞU GİBİ
+        password="yourpassword",#BATUNUN SANA OLUŞTURDIĞI ŞİFRE
+        database="mydatabase"   #CARRENT
+        )
+
+        self.mycursor = self.mydb.cursor()
+
+
+        ###########################################################3
+        ########################################################################
+        
+
+
+        ###########################################################3
+        ########################################################################
 
         #init app theme
         self.initializeAppTheme()
@@ -32,6 +58,113 @@ class GuiFunctions():
          self.ui.profileBtn.clicked.connect(lambda:self.ui.rightMenu.expandMenu())
 
          self.ui.closeRightMenuBtn.clicked.connect(lambda:self.ui.rightMenu.collapseMenu())
+
+         self.ui.RentNew.clicked.connect(lambda:self.insert_rent())
+         self.ui.RentDelete.clicked.connect(lambda:self.delete_rent())
+         self.ui.RentUpdate.clicked.connect(lambda:self.update_rent())
+
+
+    #####Rentcardaki tüm bilgileri çekme
+    def get_data(self):
+         
+        self.rent_id=self.ui.RentId.text()
+        self.car_id=self.ui.CarId.text()
+        self.customer_id=self.ui.CustomerId.text()
+        self.damaged=self.ui.Damaged.text()
+        self.firstdate=self.ui.FirstDate.text()
+        self.enddate=self.ui.EndDate.text()
+        self.price=self.ui.RentPrice.text()
+        self.status=self.ui.Status_3.text()
+
+        
+
+        if not self.rent_id:
+              self.rent_id=None
+        else:
+             self.rent_id=int(self.rent_id)
+        
+        if not self.car_id:
+             self.car_id=None
+        else:
+             self.car_id=int(self.car_id)
+        if not self.customer_id:
+             self.customer_id=None
+        else:
+             self.customer_id_id=int(self.customer_id)
+        if not self.damaged:
+             self.damaged=None
+        else:
+            if self.damaged== "damaged" or self.damaged== "Damaged":
+                self.damaged=True
+            else:
+                self.damaged=False
+        
+        if not self.enddate:
+             self.enddate=None
+        if not self.firstdate:
+             self.firstdate=None
+        if not self.price:
+             self.price=None
+        if not self.status:
+             self.status=None
+         
+    def insert_rent(self):
+        self.get_data()  # Verileri al
+        sql="INSERT INTO Rent Values (%s, %s, %s, %s, %s, %s, %s, %s)"
+        val=(self.rent_id,self.car_id,self.customer_id,self.status,self.price,self.damaged,self.firstdate,self.enddate)
+        self.mycursor.execute(sql,val)
+
+        self.mydb.commit()
+    def delete_rent(self):
+        self.get_data()
+        sql=f"DELETE FROM Rent Where RentId = %s"
+        self.mycursor.execute(sql,(self.rent_id,))
+        
+        self.mydb.commit()
+        
+    def update_rent(self):
+        self.get_data()
+
+        if self.status:
+            sql="UPDATE Rent SET Status = %s WHERE rentId = %s"
+            val=(self.status,self.rent_id)
+
+            self.mycursor.execute(sql,val)
+        if self.price:
+            sql="UPDATE Rent SET RentPrice = %s WHERE rentId = %s"
+            val=(self.price,self.rent_id)
+
+            self.mycursor.execute(sql,val)
+        if self.firstdate:
+            sql="UPDATE Rent SET FirstDate = %s WHERE rentId = %s"
+            val=(self.firstdate,self.rent_id)
+
+            self.mycursor.execute(sql,val)
+        if self.enddate:
+            sql="UPDATE Rent SET EndDate = %s WHERE rentId = %s"
+            val=(self.enddate,self.rent_id)
+
+            self.mycursor.execute(sql,val)
+        if self.damaged:
+            sql="UPDATE Rent Set Status = %s Where rentId = %s"
+            val=(self.damaged,self.rent_id)
+
+            self.mycursor.execute(sql,val)
+        if self.customer_id:
+            sql="UPDATE Rent Set CustomerId = %s Where rentId = %s"
+            val=(self.customer_id,self.rent_id)
+
+            self.mycursor.execute(sql,val)
+        if self.car_id:
+            sql="UPDATE Rent Set CarId = %s Where rentId = %s"
+            val=(self.car_id,self.rent_id)
+
+            self.mycursor.execute(sql,val)
+
+        self.mydb.commit()
+             
+             
+              
 
     #Create searchbar tooltip
     def createSearchTipOverlay(self):
