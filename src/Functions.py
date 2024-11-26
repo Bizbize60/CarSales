@@ -58,7 +58,7 @@ class GuiFunctions():
          self.ui.profileBtn.clicked.connect(lambda:self.ui.rightMenu.expandMenu())
 
          self.ui.closeRightMenuBtn.clicked.connect(lambda:self.ui.rightMenu.collapseMenu())
-
+            ##### tuşlara basınca hangi fonksiyonu çalıştırcağını seçiyor bunun için ben butopnların adını ne yaptım bilmeniz lazım onu da gruba attom Qpushbuttonların adına bakın
          self.ui.RentNew.clicked.connect(lambda:self.insert_rent())
          self.ui.RentDelete.clicked.connect(lambda:self.delete_rent())
          self.ui.RentUpdate.clicked.connect(lambda:self.update_rent())
@@ -117,7 +117,7 @@ class GuiFunctions():
         self.mydb.commit()
     def delete_rent(self):
         self.get_data()
-        sql=f"DELETE FROM Rent Where RentId = %s"
+        sql=f"DELETE FROM Rent Where RentId = %s" ###querylerle aynı olacak sadece verilerin yerine %s koyacaksınız
         self.mycursor.execute(sql,(self.rent_id,))
         
         self.mydb.commit()
