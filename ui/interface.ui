@@ -91,10 +91,6 @@
             <property name="text">
              <string/>
             </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/feather/icons/feather/menu.png</normaloff>:/feather/icons/feather/menu.png</iconset>
-            </property>
            </widget>
           </item>
          </layout>
@@ -131,7 +127,7 @@
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>:/feather/icons/feather/home.png</normaloff>:/feather/icons/feather/home.png</iconset>
+              <normaloff>:/icons/feather/home.png</normaloff>:/icons/feather/home.png</iconset>
             </property>
            </widget>
           </item>
@@ -142,7 +138,7 @@
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>:/feather/icons/feather/list.png</normaloff>:/feather/icons/feather/list.png</iconset>
+              <normaloff>:/icons/feather/list.png</normaloff>:/icons/feather/list.png</iconset>
             </property>
            </widget>
           </item>
@@ -153,7 +149,7 @@
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>:/feather/icons/feather/printer.png</normaloff>:/feather/icons/feather/printer.png</iconset>
+              <normaloff>:/icons/feather/printer.png</normaloff>:/icons/feather/printer.png</iconset>
             </property>
            </widget>
           </item>
@@ -282,10 +278,6 @@
            <widget class="QPushButton" name="closeCenterMenuBtn">
             <property name="text">
              <string/>
-            </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>:/feather/icons/feather/x-circle.png</normaloff>:/feather/icons/feather/x-circle.png</iconset>
             </property>
            </widget>
           </item>
@@ -479,10 +471,6 @@
                <property name="text">
                 <string/>
                </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>:/feather/icons/feather/bell.png</normaloff>:/feather/icons/feather/bell.png</iconset>
-               </property>
               </widget>
              </item>
              <item>
@@ -490,20 +478,12 @@
                <property name="text">
                 <string/>
                </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>:/feather/icons/feather/more-horizontal.png</normaloff>:/feather/icons/feather/more-horizontal.png</iconset>
-               </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="profileBtn">
                <property name="text">
                 <string/>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>:/feather/icons/feather/user.png</normaloff>:/feather/icons/feather/user.png</iconset>
                </property>
               </widget>
              </item>
@@ -630,10 +610,6 @@
                <property name="text">
                 <string/>
                </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>:/feather/icons/feather/window_minimize.png</normaloff>:/feather/icons/feather/window_minimize.png</iconset>
-               </property>
               </widget>
              </item>
              <item>
@@ -641,20 +617,12 @@
                <property name="text">
                 <string/>
                </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>:/feather/icons/feather/square.png</normaloff>:/feather/icons/feather/square.png</iconset>
-               </property>
               </widget>
              </item>
              <item>
               <widget class="QPushButton" name="closeBtn">
                <property name="text">
                 <string/>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>:/feather/icons/feather/window_close.png</normaloff>:/feather/icons/feather/window_close.png</iconset>
                </property>
               </widget>
              </item>
@@ -4311,7 +4279,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../179cef19/_icons.qrc"/>
+  <include location="../Qss/icons/_icons.qrc"/>
  </resources>
  <connections/>
 </ui>

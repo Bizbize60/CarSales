@@ -6,7 +6,7 @@ from Custom_Widgets.QCustomLoadingIndicators import QCustom3CirclesLoader
 from PySide6.QtCore import QSettings, QTimer
 from PySide6.QtGui import QColor, QFont, QFontDatabase
 from PySide6.QtWidgets import QGraphicsDropShadowEffect
-
+from PySide6.QtWidgets import QTableWidgetItem
 class GuiFunctions():
     def __init__(self, MainWindow):
         self.main=MainWindow
@@ -22,10 +22,10 @@ class GuiFunctions():
         
 
         self.mydb = mysql.connector.connect(
-        host="localhost", #BATUNUN İP ADRESİ
-        user="yourusername", #BURAK SANA BİR ÜYELİK OLUŞTURAMSI LAZIM BATU BANA OLUŞTURDUĞU GİBİ
-        password="yourpassword",#BATUNUN SANA OLUŞTURDIĞI ŞİFRE
-        database="mydatabase"   #CARRENT
+        host="192.168.1.5", #BATUNUN İP ADRESİ
+        user="tunahan", #BURAK SANA BİR ÜYELİK OLUŞTURAMSI LAZIM BATU BANA OLUŞTURDUĞU GİBİ
+        password="tuna60",#BATUNUN SANA OLUŞTURDIĞI ŞİFRE
+        database="carrent"   #CARRENT
         )
 
         self.mycursor = self.mydb.cursor()
@@ -45,6 +45,13 @@ class GuiFunctions():
         #add click event to search button
         self.ui.searchBtn.clicked.connect(self.showSearchResults)
 
+        
+        self.customerTableshow()
+        self.rentTableshow()
+        ######################3
+        self.timerstart()
+        
+
         self.connectMenuButtons()
     def connectMenuButtons(self):
          self.ui.settingsBtn.clicked.connect(lambda:self.ui.centerMenu.expandMenu())
@@ -62,11 +69,51 @@ class GuiFunctions():
          self.ui.RentNew.clicked.connect(lambda:self.insert_rent())
          self.ui.RentDelete.clicked.connect(lambda:self.delete_rent())
          self.ui.RentUpdate.clicked.connect(lambda:self.update_rent())
+        ############car tablosu
+         self.ui.CarNew.clicked.connect(lambda:self.insert_car())
+         self.ui.CarUpdate.clicked.connect(lambda:self.delete_car())
+         self.ui.CarDelete.clicked.connect(lambda:self.update_rent())
 
+         self.ui.CustomerNew.clicked.connect(lambda:self.insert_customer())
+         self.ui.CustomerUpdate.clicked.connect(lambda:self.update_customer())
+         self.ui.CustomerDelete.clicked.connect(lambda:self.delete_customer())
+
+    def timerstart(self):
+        self.timercar = QTimer(None)
+        self.timercar.timeout.connect(self.carsTableshow)  # Zamanlayıcı tetiklendiğinde 
+        self.timercar.start(5000)
+
+        self.timercustomer = QTimer(None)
+        self.timercustomer.timeout.connect(self.customerTableshow)
+        self.timercustomer.start(5000)
+
+        self.timerrent = QTimer(None)
+        self.timerrent.timeout.connect(self.rentTableshow)
+        self.timerrent.start(5000)
+    
+
+    def carsTableshow(self):
+        self.mycursor.execute("Select * From Cars")
+        result=self.mycursor.fetchall()
+        for index,generalvalue in enumerate(result):
+            for indexy,value in enumerate(generalvalue):
+                self.ui.carsTable.setItem(index,indexy,QTableWidgetItem(str(value)))
+    def customerTableshow(self):
+        self.mycursor.execute("Select * from Customers")
+        result=self.mycursor.fetchall()
+        for index,generalvalue in enumerate(result):
+            for indexy,value in enumerate(generalvalue):
+                self.ui.customerTable.setItem(index,indexy,QTableWidgetItem(str(value)))
+    def rentTableshow(self):
+        self.mycursor.execute("Select * from Rent")
+        result=self.mycursor.fetchall()
+        for index,generalvalue in enumerate(result):
+            for indexy,value in enumerate(generalvalue):
+                self.ui.rentTable.setItem(index,indexy,QTableWidgetItem(str(value)))
 
     #####Rentcardaki tüm bilgileri çekme
     def get_data(self):
-         
+        ##Rent
         self.rent_id=self.ui.RentId.text()
         self.car_id=self.ui.CarId.text()
         self.customer_id=self.ui.CustomerId.text()
@@ -75,6 +122,26 @@ class GuiFunctions():
         self.enddate=self.ui.EndDate.text()
         self.price=self.ui.RentPrice.text()
         self.status=self.ui.Status_3.text()
+
+
+        ##car
+        self.brand=self.ui.Brand.text()
+        self.car_c_id=self.ui.CarIdTable.text()
+        self.kilometer=self.ui.Kilometer.text()
+        self.model=self.ui.Model.text()
+        self.model_year=self.ui.ModelYear.text()
+        self.plate=self.ui.Plate.text()
+
+
+
+        ##customer
+        self.age=self.ui.Age.text()
+        self.customer_c_id=self.ui.CustomerId_2.text()
+        self.customer_name=self.ui.CustomerName.text()
+        self.license=self.ui.License.text()
+        self.surname=self.ui.Surname.text()
+        self.tc=self.ui.TC.text()
+
 
         
 
@@ -90,7 +157,7 @@ class GuiFunctions():
         if not self.customer_id:
              self.customer_id=None
         else:
-             self.customer_id_id=int(self.customer_id)
+             self.customer_id=int(self.customer_id)
         if not self.damaged:
              self.damaged=None
         else:
@@ -162,9 +229,87 @@ class GuiFunctions():
             self.mycursor.execute(sql,val)
 
         self.mydb.commit()
-             
-             
-              
+    def insert_car(self):
+        self.get_data()
+        sql="INSERT INTO Cars Values (%s, %s, %s, %s, %s, %s)"
+        val=(self.car_c_id,self.plate,self.brand,self.model,self.model_year,self.kilometer)
+        self.mycursor.execute(sql,val)
+
+        self.mydb.commit()
+    def delete_car(self):
+        self.get_data()
+        sql=f"DELETE FROM Cars Where CarId = %s" ###querylerle aynı olacak sadece verilerin yerine %s koyacaksınız
+        self.mycursor.execute(sql,(self.car_c_id,))
+        
+        self.mydb.commit()
+    
+    def update_car(self):
+        self.get_data()
+
+        if self.plate:
+            sql="UPDATE Cars SET PlateNumber = %s WHERE CarId = %s"
+            val=(self.plate,self.car_c_id)
+            self.mycursor.execute(sql,val)
+        if self.brand:
+            sql="UPDATE Cars SET CarBrand = %s WHERE CarId = %s"
+            val=(self.brand,self.car_c_id)
+            self.mycursor.execute(sql,val)
+        if self.plate:
+            sql="UPDATE Cars SET CarModel = %s WHERE CarId = %s"
+            val=(self.model,self.car_c_id)
+            self.mycursor.execute(sql,val)
+        if self.plate:
+            sql="UPDATE Cars SET ModelYear = %s WHERE CarId = %s"
+            val=(self.model_year,self.car_c_id)
+            self.mycursor.execute(sql,val)
+        if self.plate:
+            sql="UPDATE Cars SET kilometer = %s WHERE CarId = %s"
+            val=(self.kilometer,self.car_c_id)
+            self.mycursor.execute(sql,val)
+        self.mydb.commit()  
+
+        
+    def insert_customer(self):
+        self.get_data()
+        sql="INSERT INTO Customers Values (%s, %s, %s, %s, %s, %s)"
+        val=(self.customer_c_id,self.customer_name,self.surname,self.age,self.license,self.tc)
+        self.mycursor.execute(sql,val)
+
+        self.mydb.commit()  
+    def delete_customer(self):
+        self.get_data()
+        sql=f"DELETE FROM Customers Where CustomerId = %s" ###querylerle aynı olacak sadece verilerin yerine %s koyacaksınız
+        self.mycursor.execute(sql,(self.customer_c_id,))
+        
+        self.mydb.commit()
+      
+
+    def update_customer(self):
+        self.get_data()
+
+        if self.customer_name:
+            sql="UPDATE Customers SET CustomerName = %s WHERE CustomerId = %s"
+            val=(self.customer_name,self.customer_c_id)
+            self.mycursor.execute(sql,val)
+        
+        if self.surname:
+            sql="UPDATE Customers SET CustomerSurame = %s WHERE CustomerId = %s"
+            val=(self.surname,self.customer_c_id)
+            self.mycursor.execute(sql,val)
+
+        if self.age:
+            sql="UPDATE Customers SET Age = %s WHERE CustomerId = %s"
+            val=(self.age,self.customer_c_id)
+            self.mycursor.execute(sql,val)
+        if self.license:
+            sql="UPDATE Customers SET DriverLicenseType = %s WHERE CustomerId = %s"
+            val=(self.license,self.customer_c_id)
+            self.mycursor.execute(sql,val)
+        if self.tc:
+            sql="UPDATE Customers SET TCNO = %s WHERE CustomerId = %s"
+            val=(self.tc,self.customer_c_id)
+            self.mycursor.execute(sql,val)
+        self.mydb.commit()      
 
     #Create searchbar tooltip
     def createSearchTipOverlay(self):
@@ -195,9 +340,11 @@ class GuiFunctions():
 
         #show tip overlay
     def showSearchResults(self):
-        #only if not empty
-        searchPhrase = self.ui.searchInp.text()
-        if not searchPhrase:
+        self.resultshowed=""
+        self.current_index = self.ui.mainPages.currentIndex()
+       
+        self.searchPhrase = [self.ui.searchInp.text()]
+        if not self.searchPhrase:
              return 
         try:
                 self.searchTooltip.show()
@@ -205,8 +352,39 @@ class GuiFunctions():
                 #re-init
                 self.createSearchTipOverlay()
                 self.searchTooltip.show()
+        if self.current_index == 0 :
+            sql="Select * From Rent Where rentId = %s"
+            val=self.searchPhrase
+            self.mycursor.execute(sql,val)
+            result=self.mycursor.fetchall()
+            
+            for i in result:
+                self.resultshowed=self.resultshowed+str(i)
+            
+        elif self.current_index == 1:
+            sql="Select * From Customers Where CustomerId = %s"
+            val=self.searchPhrase
+            self.mycursor.execute(sql,val)
+            result=self.mycursor.fetchall()
+            
+            for i in result:
+                self.resultshowed=self.resultshowed+str(i)
+                
+                
+            
+        elif self.current_index == 3:
+            sql="Select * From Cars Where CarId = %s"
+            val=self.searchPhrase
+            self.mycursor.execute(sql,val)
+            result=self.mycursor.fetchall()
+            
+            for i in result:
+                self.resultshowed=self.resultshowed+str(i)
+        print(self.resultshowed)
+        self.searchTooltip.setDescription("Showing search results for: "+ self.resultshowed)
+        
         # update search descriptions
-        self.searchTooltip.setDescription("Showing search results for: "+searchPhrase)
+        
 
         #initialize app theme
     def initializeAppTheme(self):
