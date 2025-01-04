@@ -7,6 +7,7 @@ from PySide6.QtCore import QSettings, QTimer
 from PySide6.QtGui import QColor, QFont, QFontDatabase
 from PySide6.QtWidgets import QGraphicsDropShadowEffect
 from PySide6.QtWidgets import QTableWidgetItem
+import time
 class GuiFunctions():
     def __init__(self, MainWindow):
         self.main=MainWindow
@@ -22,7 +23,7 @@ class GuiFunctions():
         
 
         self.mydb = mysql.connector.connect(
-        host="192.168.1.5", #BATUNUN İP ADRESİ
+        host="192.168.1.7", #BATUNUN İP ADRESİ
         user="tunahan", #BURAK SANA BİR ÜYELİK OLUŞTURAMSI LAZIM BATU BANA OLUŞTURDUĞU GİBİ
         password="tuna60",#BATUNUN SANA OLUŞTURDIĞI ŞİFRE
         database="carrent"   #CARRENT
@@ -45,11 +46,11 @@ class GuiFunctions():
         #add click event to search button
         self.ui.searchBtn.clicked.connect(self.showSearchResults)
 
-        
+        self.carsTableshow()
         self.customerTableshow()
         self.rentTableshow()
         ######################3
-        self.timerstart()
+        
         
 
         self.connectMenuButtons()
@@ -71,40 +72,37 @@ class GuiFunctions():
          self.ui.RentUpdate.clicked.connect(lambda:self.update_rent())
         ############car tablosu
          self.ui.CarNew.clicked.connect(lambda:self.insert_car())
-         self.ui.CarUpdate.clicked.connect(lambda:self.delete_car())
-         self.ui.CarDelete.clicked.connect(lambda:self.update_rent())
+         self.ui.CarDelete.clicked.connect(lambda:self.delete_car())
+         self.ui.CarUpdate.clicked.connect(lambda:self.update_car())
 
          self.ui.CustomerNew.clicked.connect(lambda:self.insert_customer())
          self.ui.CustomerUpdate.clicked.connect(lambda:self.update_customer())
          self.ui.CustomerDelete.clicked.connect(lambda:self.delete_customer())
 
-    def timerstart(self):
-        self.timercar = QTimer(None)
-        self.timercar.timeout.connect(self.carsTableshow)  # Zamanlayıcı tetiklendiğinde 
-        self.timercar.start(5000)
-
-        self.timercustomer = QTimer(None)
-        self.timercustomer.timeout.connect(self.customerTableshow)
-        self.timercustomer.start(5000)
-
-        self.timerrent = QTimer(None)
-        self.timerrent.timeout.connect(self.rentTableshow)
-        self.timerrent.start(5000)
+    
     
 
     def carsTableshow(self):
+        self.ui.carsTable.clearContents()
+        self.ui.carsTable.setRowCount(50)
+
         self.mycursor.execute("Select * From Cars")
         result=self.mycursor.fetchall()
         for index,generalvalue in enumerate(result):
             for indexy,value in enumerate(generalvalue):
                 self.ui.carsTable.setItem(index,indexy,QTableWidgetItem(str(value)))
+        print("Tablo güncellendi.")
+              
+        
     def customerTableshow(self):
+        self.ui.customerTable.clearContents()
         self.mycursor.execute("Select * from Customers")
         result=self.mycursor.fetchall()
         for index,generalvalue in enumerate(result):
             for indexy,value in enumerate(generalvalue):
                 self.ui.customerTable.setItem(index,indexy,QTableWidgetItem(str(value)))
     def rentTableshow(self):
+        self.ui.rentTable.clearContents()
         self.mycursor.execute("Select * from Rent")
         result=self.mycursor.fetchall()
         for index,generalvalue in enumerate(result):
@@ -180,14 +178,16 @@ class GuiFunctions():
         sql="INSERT INTO Rent Values (%s, %s, %s, %s, %s, %s, %s, %s)"
         val=(self.rent_id,self.car_id,self.customer_id,self.status,self.price,self.damaged,self.firstdate,self.enddate)
         self.mycursor.execute(sql,val)
-
         self.mydb.commit()
+
+        self.rentTableshow()
     def delete_rent(self):
         self.get_data()
         sql=f"DELETE FROM Rent Where RentId = %s" ###querylerle aynı olacak sadece verilerin yerine %s koyacaksınız
         self.mycursor.execute(sql,(self.rent_id,))
-        
         self.mydb.commit()
+        
+        self.rentTableshow()
         
     def update_rent(self):
         self.get_data()
@@ -229,24 +229,34 @@ class GuiFunctions():
             self.mycursor.execute(sql,val)
 
         self.mydb.commit()
+
+        self.rentTableshow()
     def insert_car(self):
         self.get_data()
         sql="INSERT INTO Cars Values (%s, %s, %s, %s, %s, %s)"
         val=(self.car_c_id,self.plate,self.brand,self.model,self.model_year,self.kilometer)
         self.mycursor.execute(sql,val)
-
         self.mydb.commit()
+        self.carsTableshow()
+
+
     def delete_car(self):
         self.get_data()
-        sql=f"DELETE FROM Cars Where CarId = %s" ###querylerle aynı olacak sadece verilerin yerine %s koyacaksınız
-        self.mycursor.execute(sql,(self.car_c_id,))
-        
+        sql = "DELETE FROM Cars WHERE CarId = %s"
+        self.mycursor.execute(sql, (self.car_c_id,))
         self.mydb.commit()
+        print("Silme işlemi başarılı.")
+        
+        self.carsTableshow()  # Tabloyu yenile
+
+
+   
     
     def update_car(self):
         self.get_data()
-
+        print("plaka")
         if self.plate:
+            
             sql="UPDATE Cars SET PlateNumber = %s WHERE CarId = %s"
             val=(self.plate,self.car_c_id)
             self.mycursor.execute(sql,val)
@@ -254,19 +264,20 @@ class GuiFunctions():
             sql="UPDATE Cars SET CarBrand = %s WHERE CarId = %s"
             val=(self.brand,self.car_c_id)
             self.mycursor.execute(sql,val)
-        if self.plate:
+        if self.model:
             sql="UPDATE Cars SET CarModel = %s WHERE CarId = %s"
             val=(self.model,self.car_c_id)
             self.mycursor.execute(sql,val)
-        if self.plate:
+        if self.model_year:
             sql="UPDATE Cars SET ModelYear = %s WHERE CarId = %s"
             val=(self.model_year,self.car_c_id)
             self.mycursor.execute(sql,val)
-        if self.plate:
+        if self.kilometer:
             sql="UPDATE Cars SET kilometer = %s WHERE CarId = %s"
             val=(self.kilometer,self.car_c_id)
             self.mycursor.execute(sql,val)
         self.mydb.commit()  
+        self.carsTableshow()
 
         
     def insert_customer(self):
@@ -276,6 +287,8 @@ class GuiFunctions():
         self.mycursor.execute(sql,val)
 
         self.mydb.commit()  
+
+        self.customerTableshow()
     def delete_customer(self):
         self.get_data()
         sql=f"DELETE FROM Customers Where CustomerId = %s" ###querylerle aynı olacak sadece verilerin yerine %s koyacaksınız
@@ -283,7 +296,7 @@ class GuiFunctions():
         
         self.mydb.commit()
       
-
+        self.customerTableshow()
     def update_customer(self):
         self.get_data()
 
@@ -293,7 +306,7 @@ class GuiFunctions():
             self.mycursor.execute(sql,val)
         
         if self.surname:
-            sql="UPDATE Customers SET CustomerSurame = %s WHERE CustomerId = %s"
+            sql="UPDATE Customers SET CustomerSurname = %s WHERE CustomerId = %s"
             val=(self.surname,self.customer_c_id)
             self.mycursor.execute(sql,val)
 
@@ -310,6 +323,8 @@ class GuiFunctions():
             val=(self.tc,self.customer_c_id)
             self.mycursor.execute(sql,val)
         self.mydb.commit()      
+
+        self.customerTableshow()
 
     #Create searchbar tooltip
     def createSearchTipOverlay(self):
