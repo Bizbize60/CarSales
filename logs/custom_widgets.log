@@ -1,0 +1,493 @@
+2024-06-23 22:41:16,055 - ERROR - Error loading your JSON files: 'E:\Spinn TV Tut\24 Modern Desktop GUI\dist\main\json-styles\style.json' does not exist
+2024-06-23 22:44:51,044 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-06-23 22:44:51,045 - INFO - Live monitoring json-styles/style.json for changes
+2024-06-23 22:44:54,878 - INFO - all icons have been checked and missing icons generated!
+2024-06-23 22:45:11,607 - INFO - ('Current icons color ', 'black', 'New icons color', '#fefefe')
+2024-06-23 22:45:11,608 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-23 23:19:13,884 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-23 23:19:13,884 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-23 23:22:49,903 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-23 23:22:49,903 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-23 23:22:50,393 - INFO - all icons have been checked and missing icons generated!
+2024-11-23 23:22:55,699 - INFO - File changed: /home/tunahan/Desktop/deneme/deneme/Qss/scss/defaultStyle.scss
+2024-11-23 23:26:29,807 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-23 23:26:29,808 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-23 23:26:29,911 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 12:58:37,418 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 12:58:37,418 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 12:58:37,516 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 12:58:51,309 - INFO - ('Current icons color ', '#FFFFFF', 'New icons color', '#000000')
+2024-11-24 12:58:51,309 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 12:58:53,587 - INFO - ('Current icons color ', '#000000', 'New icons color', 'black')
+2024-11-24 12:58:53,587 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 12:59:06,908 - INFO - ('Current icons color ', 'black', 'New icons color', '#fefefe')
+2024-11-24 12:59:06,908 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 17:45:30,543 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 17:45:30,543 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 17:45:31,080 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 18:33:57,121 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 18:33:57,121 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 18:33:57,678 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 18:35:17,803 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 18:35:17,803 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 18:35:18,336 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 18:38:24,385 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 18:38:24,385 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 18:39:12,204 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 18:39:12,205 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 18:39:12,766 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 18:44:31,730 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 18:44:31,730 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 18:44:32,294 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 18:49:55,305 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 18:49:55,305 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 18:49:55,849 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 19:09:19,582 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-24 19:09:19,582 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-24 19:09:20,141 - INFO - all icons have been checked and missing icons generated!
+2024-11-24 19:10:19,157 - INFO - ('Current icons color ', '#fefefe', 'New icons color', '#000000')
+2024-11-24 19:10:19,157 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 19:10:27,608 - INFO - ('Current icons color ', '#000000', 'New icons color', 'black')
+2024-11-24 19:10:27,609 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 19:10:32,911 - INFO - ('Current icons color ', 'black', 'New icons color', '#000000')
+2024-11-24 19:10:32,912 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 19:10:34,482 - INFO - ('Current icons color ', '#000000', 'New icons color', 'black')
+2024-11-24 19:10:34,482 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 19:10:37,050 - INFO - ('Current icons color ', 'black', 'New icons color', '#000000')
+2024-11-24 19:10:37,050 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 19:10:37,271 - INFO - ('Current icons color ', '#000000', 'New icons color', 'black')
+2024-11-24 19:10:37,272 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-24 19:10:50,431 - INFO - ('Current icons color ', 'black', 'New icons color', '#fefefe')
+2024-11-24 19:10:50,432 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-25 00:31:35,248 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 00:31:35,248 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 00:31:35,857 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 01:02:31,620 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 01:02:31,620 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 01:02:32,216 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 01:40:25,610 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 01:40:25,611 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 01:40:26,225 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 21:56:50,090 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 21:56:50,090 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 21:56:50,705 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 22:02:50,574 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 22:02:50,575 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 22:02:51,185 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 22:09:04,018 - INFO - File changed: /home/tunahan/Desktop/deneme/deneme/json-styles/style.json
+2024-11-25 22:09:04,937 - INFO - File changed: /home/tunahan/Desktop/deneme/deneme/json-styles/style.json
+2024-11-25 22:09:19,532 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 22:09:19,532 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 22:09:20,152 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 22:21:08,166 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 22:21:08,167 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 22:21:08,789 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 22:21:35,889 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 22:21:35,889 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 22:21:36,501 - INFO - all icons have been checked and missing icons generated!
+2024-11-25 22:22:37,511 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-25 22:22:37,512 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-25 22:22:38,101 - INFO - all icons have been checked and missing icons generated!
+2024-11-26 17:49:54,673 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 17:49:54,674 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-26 17:50:15,319 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 17:50:15,319 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-26 17:50:15,909 - INFO - all icons have been checked and missing icons generated!
+2024-11-26 17:52:29,480 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 17:52:29,480 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-26 17:52:30,099 - INFO - all icons have been checked and missing icons generated!
+2024-11-26 17:53:20,050 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 17:53:20,050 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-26 17:53:20,658 - INFO - all icons have been checked and missing icons generated!
+2024-11-26 18:02:51,286 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 18:02:51,286 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-26 18:02:51,873 - INFO - all icons have been checked and missing icons generated!
+2024-11-26 18:02:54,119 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 18:02:54,119 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-26 18:02:54,767 - INFO - all icons have been checked and missing icons generated!
+2024-11-26 18:38:20,074 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 18:38:20,074 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-26 19:33:36,678 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-26 19:33:36,678 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-27 21:22:21,552 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-27 21:22:21,553 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-27 21:23:53,769 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-27 21:23:53,769 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-27 21:23:54,409 - INFO - all icons have been checked and missing icons generated!
+2024-11-27 21:24:35,053 - INFO - ('Current icons color ', '#fefefe', 'New icons color', '#000000')
+2024-11-27 21:24:35,053 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-27 21:24:39,343 - INFO - ('Current icons color ', '#000000', 'New icons color', '#fefefe')
+2024-11-27 21:24:39,343 - INFO - Generating icons for your theme, please wait. This may take long
+2024-11-28 02:34:50,057 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 02:34:50,058 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 02:36:46,251 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 02:36:46,251 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:28:30,722 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:28:30,722 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:28:31,569 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 15:38:25,480 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:38:25,480 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:39:03,460 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:39:03,460 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:39:04,176 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 15:39:42,844 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:39:42,844 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:39:43,601 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 15:40:22,092 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:40:22,092 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:40:22,822 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 15:40:33,229 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:40:33,229 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:40:34,032 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 15:47:49,040 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:47:49,040 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:48:55,588 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:48:55,588 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:48:56,373 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 15:50:55,333 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:50:55,333 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:51:12,276 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:51:12,276 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:51:13,130 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 15:55:57,304 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:55:57,305 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:57:21,772 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:57:21,772 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:57:38,327 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 15:57:38,327 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 15:57:39,142 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:01:16,552 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:01:16,552 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:01:47,558 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:01:47,558 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:01:48,283 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:02:20,885 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:02:20,886 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:02:21,665 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:05:15,781 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:05:15,782 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:05:16,555 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:05:48,697 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:05:48,697 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:05:49,421 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:08:34,086 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:08:34,086 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:08:34,805 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:08:57,585 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:08:57,585 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:08:58,370 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:18:28,652 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:18:28,652 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:18:29,492 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:19:23,315 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:19:23,315 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:19:24,025 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:20:59,795 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:20:59,796 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:21:00,634 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:21:33,267 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:21:33,267 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:21:34,105 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:23:21,273 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:23:21,274 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:23:22,034 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:25:07,151 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:25:07,152 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:25:08,020 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:26:57,025 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:26:57,025 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:26:57,781 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:30:00,317 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:30:00,317 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:30:01,072 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:31:25,641 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:31:25,642 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:31:26,368 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:32:09,324 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:32:09,324 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:32:10,130 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:32:58,472 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:32:58,473 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:32:59,265 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 16:34:42,702 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 16:34:42,702 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 16:34:43,485 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:40:41,753 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:40:41,754 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:40:42,520 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:41:47,410 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:41:47,410 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:41:48,238 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:45:29,828 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:45:29,828 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:45:30,590 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:45:45,683 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:45:45,684 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:45:46,458 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:47:14,454 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:47:14,454 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:47:15,280 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:56:28,748 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:56:28,748 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:56:29,536 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:58:00,549 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:58:00,549 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:58:01,280 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:59:17,319 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:59:17,320 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:59:18,112 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 19:59:40,012 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 19:59:40,012 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 19:59:40,834 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:00:34,411 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:00:34,411 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:00:35,220 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:01:34,693 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:01:34,693 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:01:35,404 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:01:57,754 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:01:57,755 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:01:58,521 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:03:28,900 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:03:28,900 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:03:29,691 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:04:01,717 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:04:01,717 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:04:02,496 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:04:10,118 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:04:10,119 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:04:10,845 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:04:33,828 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:04:33,828 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:04:34,643 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:04:51,079 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:04:51,079 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:04:51,825 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:05:04,724 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:05:04,725 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:05:05,555 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:05:29,976 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:05:29,977 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:05:30,751 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:05:46,153 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:05:46,153 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:05:46,921 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:06:11,612 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:06:11,613 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:06:12,424 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:07:52,918 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:07:52,918 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:07:53,668 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:09:17,264 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:09:17,264 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:09:18,345 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:13:07,795 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:13:07,795 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:13:08,572 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:13:50,622 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:13:50,622 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:13:51,379 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:18:10,112 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:18:10,112 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:18:10,896 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:20:16,756 - INFO - File changed: /home/tunahan/Desktop/deneme/deneme/json-styles/style.json
+2024-11-28 20:20:19,103 - INFO - File changed: /home/tunahan/Desktop/deneme/deneme/json-styles/style.json
+2024-11-28 20:20:26,714 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:20:26,715 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:20:27,473 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:21:04,002 - INFO - File changed: /home/tunahan/Desktop/deneme/deneme/json-styles/style.json
+2024-11-28 20:21:24,013 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:21:24,013 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:21:24,833 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:22:00,471 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:22:00,471 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:22:01,272 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:22:29,827 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:22:29,827 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:22:30,659 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 20:54:50,027 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 20:54:50,027 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 20:54:50,779 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 21:20:09,619 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 21:20:09,619 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 21:20:10,472 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 21:51:31,913 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 21:51:31,913 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 21:51:32,645 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 21:52:05,435 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 21:52:05,435 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 21:52:06,231 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 21:52:55,238 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 21:52:55,238 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 21:52:56,011 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 21:53:28,242 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 21:53:28,242 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 21:53:28,964 - INFO - all icons have been checked and missing icons generated!
+2024-11-28 21:55:36,103 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-11-28 21:55:36,104 - INFO - Live monitoring json-styles/style.json for changes
+2024-11-28 21:55:36,858 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:08:48,556 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:08:48,557 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:13:50,123 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:13:50,123 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:13:50,994 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:16:46,041 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:16:46,041 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:16:46,816 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:19:45,572 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:19:45,573 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:19:46,336 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:19:53,948 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:19:53,948 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:19:54,720 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:22:01,861 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:22:01,861 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:22:02,663 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:23:05,166 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:23:05,167 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:23:05,919 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:23:53,960 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:23:53,960 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:23:54,750 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:26:37,535 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:26:37,535 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:26:38,293 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:28:13,756 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:28:13,757 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:28:14,474 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:31:46,884 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:31:46,884 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:31:47,629 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:46:47,933 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:46:47,933 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:46:48,903 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:48:00,243 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:48:00,243 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:48:00,973 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:48:17,410 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:48:17,411 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:48:18,186 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:49:53,518 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:49:53,518 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:49:54,232 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:50:32,773 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:50:32,774 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:50:33,581 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:51:04,210 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:51:04,211 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:51:05,025 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:51:52,193 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:51:52,194 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:51:52,915 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:52:10,786 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:52:10,786 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:52:11,656 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:53:46,260 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:53:46,261 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:53:58,838 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:53:58,839 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:53:59,646 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:54:32,579 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:54:32,579 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:54:33,383 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:55:13,016 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:55:13,016 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:55:13,816 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:56:19,422 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:56:19,423 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:56:20,508 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 20:59:16,758 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 20:59:16,759 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 20:59:17,461 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:00:50,180 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:00:50,181 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:01:13,246 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:01:13,246 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:01:13,974 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:02:02,666 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:02:02,666 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:02:03,343 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:03:39,297 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:03:39,297 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:03:40,032 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:03:45,199 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:03:45,200 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:03:45,971 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:04:31,168 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:04:31,169 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:04:32,061 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:04:55,961 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:04:55,962 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:04:56,718 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:07:09,717 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:07:09,717 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:07:10,479 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:07:25,131 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:07:25,131 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:07:25,938 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:08:29,591 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:08:29,591 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:08:30,339 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:08:54,081 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:08:54,081 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:08:54,825 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:10:36,751 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:10:36,752 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:10:37,547 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:11:40,546 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:11:40,547 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:11:41,334 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:12:14,199 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:12:14,199 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:12:15,143 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:13:07,064 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:13:07,065 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:13:07,866 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:13:41,142 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:13:41,142 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:13:41,972 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:19:20,785 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:19:20,785 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:19:21,520 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:20:46,313 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:20:46,313 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:20:47,032 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:21:31,713 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:21:31,713 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:21:32,516 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:24:19,701 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:24:19,701 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:24:20,461 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:31:28,918 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:31:28,919 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:31:29,611 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:32:56,338 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:32:56,339 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:32:57,060 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:34:17,765 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:34:17,765 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:34:18,558 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:34:54,903 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:34:54,903 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:34:55,604 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:48:56,650 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:48:56,650 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:48:57,384 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:50:10,863 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:50:10,863 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:50:11,731 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:51:38,149 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:51:38,150 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:51:38,873 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:52:56,728 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:52:56,728 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:52:57,410 - INFO - all icons have been checked and missing icons generated!
+2024-12-17 21:56:02,692 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2024-12-17 21:56:02,692 - INFO - Live monitoring json-styles/style.json for changes
+2024-12-17 21:56:03,480 - INFO - all icons have been checked and missing icons generated!
+2025-01-03 21:12:26,619 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2025-01-03 21:12:26,619 - INFO - Live monitoring json-styles/style.json for changes
+2025-01-03 21:12:27,569 - INFO - all icons have been checked and missing icons generated!
+2025-01-03 21:13:52,619 - INFO - Live monitoring Qss/scss/defaultStyle.scss file for changes
+2025-01-03 21:13:52,620 - INFO - Live monitoring json-styles/style.json for changes
+2025-01-03 21:13:53,353 - INFO - all icons have been checked and missing icons generated!

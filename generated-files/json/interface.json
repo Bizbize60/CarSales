@@ -1,0 +1,74 @@
+{
+  "QPushButton": [
+    {
+      "name": "menuBtn",
+      "icon": ":/feather/icons/feather/menu.png"
+   },
+   {
+      "name": "homeBtn",
+      "icon": ":/feather/icons/feather/home.png"
+   },
+   {
+      "name": "dataBtn",
+      "icon": ":/feather/icons/feather/list.png"
+   },
+   {
+      "name": "reportsBtn",
+      "icon": ":/feather/icons/feather/printer.png"
+   },
+   {
+      "name": "graphsBtn",
+      "icon": ":/feather/icons/feather/pie-chart.png"
+   },
+   {
+      "name": "settingsBtn",
+      "icon": ":/feather/icons/feather/settings.png"
+   },
+   {
+      "name": "infoBtn",
+      "icon": ":/material_design/icons/material_design/info.png"
+   },
+    {
+      "name": "helpBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/help-circle.png"
+    },
+    {
+      "name": "closeCenterMenuBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/x-circle.png"
+    },
+    {
+      "name": "notificationBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/bell.png"
+    },
+    {
+      "name": "moreBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/more-horizontal.png"
+    },
+    {
+      "name": "profileBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/user.png"
+    },
+    {
+      "name": "minimizeBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/window_minimize.png"
+    },
+    {
+      "name": "restoreBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/square.png"
+    },
+    {
+      "name": "closeBtn",
+      "icon": "/home/tunahan/Desktop/deneme/deneme/ui/:/feather/icons/feather/window_close.png"
+    },
+    {
+      "name": "closeRightMenuBtn",
+      "icon": "/icons/feather/x-circle.png"
+    }
+  ],
+  "QLabel": [
+    {
+      "name": "label_10",
+      "pixmap": "/home/tunahan/Desktop/deneme/deneme/35e97f94/alert-circle.png"
+    }
+  ]
+}
